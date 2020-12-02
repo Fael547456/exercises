@@ -10,8 +10,8 @@ class Vote_Main
   {
     $this->Total_Eleitores = $Total_Eleitores;
     $this->Total_Validos   = $Total_Validos;
-	$this->Total_Brancos   = $Total_Brancos;
-	$this->Total_Nulos     = $Total_Nulos;
+    $this->Total_Brancos   = $Total_Brancos;
+    $this->Total_Nulos     = $Total_Nulos;
   }
  
   public function Porcent_Validos()
