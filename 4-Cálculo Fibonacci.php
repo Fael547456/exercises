@@ -14,9 +14,9 @@
 */
 class Fibonacci{
      
-	 public $N = 20; // Numero de vezes
+     public $N = 20; // Numero de vezes
      public $A = 1;
-	 public $B = 1;
+     public $B = 1;
     
 public function FiboCalc()
   {
