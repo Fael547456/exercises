@@ -5,7 +5,7 @@
     $somaX  = 0;
     $somaY  = 0;
     $somaXY = 0;
-	$limite = 15;
+    $limite = 15;
 
     for($i = 1; $i < $limite; $i++) {
         if($i % $X == 0) {
