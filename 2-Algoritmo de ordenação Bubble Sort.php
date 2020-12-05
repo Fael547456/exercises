@@ -19,7 +19,7 @@ class Bubble_Sort{
        }
       }
      }
-	 echo " Numeros DEPOIS do Bubble Sort: ";
+	 echo " Números depois do Bubble Sort: ";
 	 for( $i = 0; $i < $array_total; $i++ ) echo $numeros[$i]."  ";
      echo "<br>";
 	 echo "Quantidade de vezes que foi ordenado: ".$l;
