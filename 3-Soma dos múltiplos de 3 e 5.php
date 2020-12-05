@@ -27,7 +27,7 @@ class Multiplos_3_5
 }
  
    $lim = 15; //<-Limite superior de 15
-   $mycalc = new Multiplos_3_5($lim); //<-Cria o objeto com a variavel limite como paramêtro 
-   echo "A soma dos multiplos de 3 e 5 dentro do limite de ".$lim." numeros é: ".$mycalc->somaXY;
+   $mycalc = new Multiplos_3_5($lim); //<-Cria o objeto com a variável limite como paramêtro 
+   echo "A soma dos multiplos de 3 e 5 dentro do limite de ".$lim." números é: ".$mycalc->somaXY;
 
 ?> 
