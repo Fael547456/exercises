@@ -15,7 +15,7 @@ class Bubble_Sort{
         $memoria = $numeros[$i];
         $numeros[$i] = $numeros[$j];
         $numeros[$j] = $memoria;
-		$l= $l + 1; //<-Conta quantas vezes passsou pelo vetor;
+        $l= $l + 1; //<-Conta quantas vezes passsou pelo vetor;
        }
       }
      }
