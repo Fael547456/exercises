@@ -7,7 +7,7 @@ class Multiplos_3_5
   {
    for($i=0; $i<$limite; $i++){
     if($i % 3 == 0 || $i % 5 == 0){
-      $this->Soma += $i; //<-Soma o total dos multiplos de 3 e 5
+      $this->Soma += $i; //<-Soma o total dos múltiplos de 3 e 5
      }
     }
    }
