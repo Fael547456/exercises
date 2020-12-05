@@ -26,7 +26,7 @@ class Bubble_Sort{
     }
   }
 
-$numeros = array(7, 3 , 9, 4 , 1 , 2, 5, 8 , 0, 6);
+$numeros = array(7, 3 , 9, 4 , 1 , 2, 5, 8 , 0, 6);//<-Vetor a ser ordenado por Bubble Sort
 $mycalc = new Bubble_Sort($numeros);
 
 
