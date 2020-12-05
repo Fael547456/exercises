@@ -2,32 +2,30 @@
 
 class Multiplos_3_5
 {
-  public $X = 3;
-  public $Y = 5;
-  public $somaX;
-  public $somaY;
   public $somaXY;
   
   public function __construct($limite)
   {
+   $somaX = 0;
+   $somaY = 0; 
    for($i = 1; $i < $limite; $i++) {
-        if($i % $this->X == 0) {
-            $this->somaX = $i + $this->somaX;
+        if($i % 3 == 0) { 
+           $somaX = $i + $somaX; //<-Soma multiplos de 3
         }
       }
 	
    for($i = 1; $i < $limite; $i++) {
-        if($i % $this->Y == 0) {
-            $this->somaY = $i + $this->somaY;
+        if($i % 5 == 0) {
+            $somaY = $i + $somaY; //<-Soma multiplos de 5
         }
       }	
 	 
-       $this->somaXY = $this->somaX + $this->somaY;//<-Faz a soma dos multiplos de 3 e 5
+	  $this->somaXY = $somaX + $somaY; //<-Soma o total dos multiplos de 3 e 5
    }
 }
  
    $lim = 15; //<-Limite superior de 15
-   $mycalc = new Multiplos_3_5($lim); //<-Cria o objeto com a variável limite como paramêtro 
-   echo "A soma dos multiplos de 3 e 5 dentro do limite de ".$lim." números é: ".$mycalc->somaXY;
+   $mycalc = new Multiplos_3_5($lim); //<-Cria o objeto com a variavel limite como paramêtro 
+   echo "A soma dos multiplos de 3 e 5 dentro do limite de ".$lim." numeros é: ".$mycalc->somaXY;
 
 ?> 
