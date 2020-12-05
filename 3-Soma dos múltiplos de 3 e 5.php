@@ -22,7 +22,7 @@ class Multiplos_3_5
         }
       }	
 	 
-	  $this->somaXY = $this->somaX + $this->somaY;
+       $this->somaXY = $this->somaX + $this->somaY;//<-Faz a soma dos multiplos de 3 e 5
    }
 }
  
