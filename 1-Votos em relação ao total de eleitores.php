@@ -32,8 +32,7 @@ class Vote_Main
    echo $Porcent;
   }
  
-
-public function Porcent_Nulos()
+  public function Porcent_Nulos()
   {
    $Porcent = $this->Total_Nulos * 100;
    
@@ -42,7 +41,6 @@ public function Porcent_Nulos()
    echo $Porcent;
   }
 }
-
 
 $mycalc = new Vote_Main(1000,800,150,50);
 echo 'Percentual de Votos Válidos: ',$mycalc->Porcent_Validos(),'%';
