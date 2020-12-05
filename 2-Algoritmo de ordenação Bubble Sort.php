@@ -1,28 +1,34 @@
 <?php
-$numeros = array(7, 3 , 9, 4 , 1 , 2, 5, 8 , 0, 6);
-$array_total = count($numeros);
 
-echo "Numeros ANTES do Bubble Sort: ";
-for ( $i = 0; $i < $array_total; $i++ )
-   echo $numeros[$i].", ";
-
-for ( $i = 0; $i < $array_total; $i++ )
-{
-   for ($j = 0; $j < $array_total; $j++ )
-   {
+class Bubble_Sort{
+  
+  public function __construct($numeros)
+  {
+   $array_total = count($numeros);	  
+   $l = 0; //<-Valiável contadora de numeros de vezes de ordenação  
+   for ( $i = 0; $i < $array_total; $i++ )
+    {
+     for ($j = 0; $j < $array_total; $j++ )
+     {
       if ($numeros[$i] < $numeros[$j])
-      {
-         $memoria = $numeros[$i];
-         $numeros[$i] = $numeros[$j];
-         $numeros[$j] = $memoria;
+       {
+        $memoria = $numeros[$i];
+        $numeros[$i] = $numeros[$j];
+        $numeros[$j] = $memoria;
+		$l= $l + 1; //<-Conta quantas vezes passsou pelo vetor;
+       }
       }
-   }
-}
+     }
+	 echo " Numeros DEPOIS do Bubble Sort: ";
+	 for( $i = 0; $i < $array_total; $i++ ) echo $numeros[$i]."  ";
+     echo "<br>";
+	 echo "Quantidade de vezes que foi ordenado: ".$l;
+    }
+  }
 
-echo '<br>';
-echo '<br>';
-echo " Numeros DEPOIS do Bubble Sort: ";
-for( $i = 0; $i < $array_total; $i++ )
-   echo $numeros[$i].", ";
+$numeros = array(7, 3 , 9, 4 , 1 , 2, 5, 8 , 0, 6);
+$mycalc = new Bubble_Sort($numeros);
+
+
 
 ?> 
