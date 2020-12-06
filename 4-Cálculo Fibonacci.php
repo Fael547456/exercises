@@ -22,7 +22,7 @@ public function FiboCalc()
   {
 	for($i = 1; $i <= $this->N-2; $i++) {
          $C = $this->A + $this->B;
-         echo $C.", ";
+         echo $C." ";
          $this->A = $this->B;
          $this->B = $C;
       }
