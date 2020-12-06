@@ -5,7 +5,7 @@ class Bubble_Sort{
   public function __construct($numeros)
   {
    $array_total = count($numeros);	  
-   $l = 0; //<-Valiável contadora de numeros de vezes de ordenação  
+   $l = 0; //<-Variável contadora de numeros de vezes de ordenação  
    for ( $i = 0; $i < $array_total; $i++ )
     {
      for ($j = 0; $j < $array_total; $j++ )
